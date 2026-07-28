@@ -8,21 +8,23 @@ const { articles } = require('./blog-data.js');
 const ROOT = path.join(__dirname, '..');
 const DOMAIN = 'https://dumpsterrentalindianapolis.org';
 
+// Clean, root-relative paths — matches what the host (Cloudflare) actually
+// serves as 200 for every page (it 308-redirects the .html form to these).
 const ROOT_PAGES = [
-  { file: 'index.html', priority: '1.0', changefreq: 'weekly' },
-  { file: 'carmel.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'fishers.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'zionsville.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'westfield.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'noblesville.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'avon.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'greenwood.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'brownsburg.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'plainfield.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'lawrence.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'beech-grove.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'speedway.html', priority: '0.8', changefreq: 'monthly' },
-  { file: 'lebanon.html', priority: '0.8', changefreq: 'monthly' },
+  { path: '/', priority: '1.0', changefreq: 'weekly' },
+  { path: '/carmel', priority: '0.8', changefreq: 'monthly' },
+  { path: '/fishers', priority: '0.8', changefreq: 'monthly' },
+  { path: '/zionsville', priority: '0.8', changefreq: 'monthly' },
+  { path: '/westfield', priority: '0.8', changefreq: 'monthly' },
+  { path: '/noblesville', priority: '0.8', changefreq: 'monthly' },
+  { path: '/avon', priority: '0.8', changefreq: 'monthly' },
+  { path: '/greenwood', priority: '0.8', changefreq: 'monthly' },
+  { path: '/brownsburg', priority: '0.8', changefreq: 'monthly' },
+  { path: '/plainfield', priority: '0.8', changefreq: 'monthly' },
+  { path: '/lawrence', priority: '0.8', changefreq: 'monthly' },
+  { path: '/beech-grove', priority: '0.8', changefreq: 'monthly' },
+  { path: '/speedway', priority: '0.8', changefreq: 'monthly' },
+  { path: '/lebanon', priority: '0.8', changefreq: 'monthly' },
 ];
 
 function url(loc, lastmod, changefreq, priority) {
@@ -39,13 +41,13 @@ function main() {
   const entries = [];
 
   for (const p of ROOT_PAGES) {
-    entries.push(url(`${DOMAIN}/${p.file}`, today, p.changefreq, p.priority));
+    entries.push(url(`${DOMAIN}${p.path}`, today, p.changefreq, p.priority));
   }
 
-  entries.push(url(`${DOMAIN}/blog/index.html`, today, 'weekly', '0.7'));
+  entries.push(url(`${DOMAIN}/blog/`, today, 'weekly', '0.7'));
 
   for (const a of articles) {
-    entries.push(url(`${DOMAIN}/blog/${a.slug}.html`, a.publishDate, 'monthly', '0.6'));
+    entries.push(url(`${DOMAIN}/blog/${a.slug}`, a.publishDate, 'monthly', '0.6'));
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

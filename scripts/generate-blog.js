@@ -16,21 +16,23 @@ const SITE = {
   domain: 'https://dumpsterrentalindianapolis.org',
 };
 
+// Clean, root-relative paths — matches what the host (Cloudflare) actually
+// serves as 200 for every page (it 308-redirects the .html form to these).
 const CITIES = [
-  { file: 'index.html', name: 'Indianapolis' },
-  { file: 'carmel.html', name: 'Carmel' },
-  { file: 'fishers.html', name: 'Fishers' },
-  { file: 'zionsville.html', name: 'Zionsville' },
-  { file: 'westfield.html', name: 'Westfield' },
-  { file: 'noblesville.html', name: 'Noblesville' },
-  { file: 'avon.html', name: 'Avon' },
-  { file: 'greenwood.html', name: 'Greenwood' },
-  { file: 'brownsburg.html', name: 'Brownsburg' },
-  { file: 'plainfield.html', name: 'Plainfield' },
-  { file: 'lawrence.html', name: 'Lawrence' },
-  { file: 'beech-grove.html', name: 'Beech Grove' },
-  { file: 'speedway.html', name: 'Speedway' },
-  { file: 'lebanon.html', name: 'Lebanon' },
+  { path: '/', name: 'Indianapolis' },
+  { path: '/carmel', name: 'Carmel' },
+  { path: '/fishers', name: 'Fishers' },
+  { path: '/zionsville', name: 'Zionsville' },
+  { path: '/westfield', name: 'Westfield' },
+  { path: '/noblesville', name: 'Noblesville' },
+  { path: '/avon', name: 'Avon' },
+  { path: '/greenwood', name: 'Greenwood' },
+  { path: '/brownsburg', name: 'Brownsburg' },
+  { path: '/plainfield', name: 'Plainfield' },
+  { path: '/lawrence', name: 'Lawrence' },
+  { path: '/beech-grove', name: 'Beech Grove' },
+  { path: '/speedway', name: 'Speedway' },
+  { path: '/lebanon', name: 'Lebanon' },
 ];
 
 const byslug = new Map(articles.map(a => [a.slug, a]));
@@ -56,22 +58,21 @@ function applyTokens(html) {
     .replace(/\{\{BIZ\}\}/g, SITE.businessName);
 }
 
-function header(depth) {
-  const prefix = depth === 'blog' ? '../' : '';
+function header() {
   return `  <header class="site-header">
     <div class="container header-inner">
       <div class="logo">Indianapolis<span>Dumpster</span> Rental Co</div>
       <div class="header-right">
         <div class="header-phone">Call us: <a href="tel:{{TEL}}">{{PHONE}}</a></div>
-        <a href="${prefix}index.html#quote" class="btn btn-primary">Free Quote</a>
+        <a href="/#quote" class="btn btn-primary">Free Quote</a>
         <div class="menu-wrap">
           <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuDropdown">&#9776; Menu</button>
           <div class="menu-dropdown" id="menuDropdown" role="menu">
-            <a href="${prefix}index.html">Home</a>
-            <a href="${prefix}index.html#services">Services</a>
-            <a href="${prefix}index.html#areas">Service Areas</a>
-            <a href="${prefix}blog/index.html">Blog</a>
-            <a href="${prefix}index.html#quote">Get a Quote</a>
+            <a href="/">Home</a>
+            <a href="/#services">Services</a>
+            <a href="/#areas">Service Areas</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#quote">Get a Quote</a>
           </div>
         </div>
       </div>
@@ -92,9 +93,8 @@ function breadcrumb(items) {
   </div>`;
 }
 
-function footer(depth) {
-  const prefix = depth === 'blog' ? '../' : '';
-  const cityLinks = CITIES.map(c => `            <li><a href="${prefix}${c.file}">${c.name}</a></li>`).join('\n');
+function footer() {
+  const cityLinks = CITIES.map(c => `            <li><a href="${c.path}">${c.name}</a></li>`).join('\n');
   return `  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -112,13 +112,13 @@ function footer(depth) {
         <div class="footer-col">
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="${prefix}index.html#services">10-Yard Dumpster Rental</a></li>
-            <li><a href="${prefix}index.html#services">20-Yard Dumpster Rental</a></li>
-            <li><a href="${prefix}index.html#services">30-Yard Dumpster Rental</a></li>
-            <li><a href="${prefix}index.html#services">40-Yard Dumpster Rental</a></li>
-            <li><a href="${prefix}index.html#services">Yard Waste Removal</a></li>
-            <li><a href="${prefix}index.html#services">Construction Debris Removal</a></li>
-            <li><a href="${prefix}blog/index.html">Blog</a></li>
+            <li><a href="/#services">10-Yard Dumpster Rental</a></li>
+            <li><a href="/#services">20-Yard Dumpster Rental</a></li>
+            <li><a href="/#services">30-Yard Dumpster Rental</a></li>
+            <li><a href="/#services">40-Yard Dumpster Rental</a></li>
+            <li><a href="/#services">Yard Waste Removal</a></li>
+            <li><a href="/#services">Construction Debris Removal</a></li>
+            <li><a href="/blog/">Blog</a></li>
           </ul>
         </div>
 
@@ -183,11 +183,11 @@ function headBoilerplate({ title, description, canonical, ogTitle, ogDescription
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/style.css" />`;
+  <link rel="stylesheet" href="/assets/style.css" />`;
 }
 
-function postCard(a, prefix) {
-  return `<a href="${prefix}${a.slug}.html" class="post-card">
+function postCard(a) {
+  return `<a href="/blog/${a.slug}" class="post-card">
           <span class="post-card-category">${escapeHtml(a.category)}</span>
           <h3>${escapeHtml(a.title)}</h3>
           <p>${escapeHtml(a.excerpt)}</p>
@@ -202,7 +202,7 @@ function articleCta() {
         <p>Flat-rate pricing, same-day and next-day delivery across Indianapolis and the surrounding suburbs. No hidden fees, ever.</p>
         <div class="cta-actions">
           <a href="tel:{{TEL}}" class="btn btn-white">Call {{PHONE}}</a>
-          <a href="../index.html#quote" class="btn btn-outline">Request Online Quote</a>
+          <a href="/#quote" class="btn btn-outline">Request Online Quote</a>
         </div>
       </div>`;
 }
@@ -221,7 +221,7 @@ function articleBody(article) {
 
 function relatedSection(article) {
   const related = article.relatedSlugs.map(s => byslug.get(s)).filter(Boolean);
-  const cards = related.map(a => postCard(a, '')).join('\n        ');
+  const cards = related.map(a => postCard(a)).join('\n        ');
   const sitePages = (article.relatedSitePages || []).map(p => `<a href="${p.href}">${escapeHtml(p.label)}</a>`).join(', ');
   return `  <section class="section related-posts">
     <div class="container">
@@ -268,10 +268,10 @@ function breadcrumbSchema(items) {
 }
 
 function articlePage(article) {
-  const canonical = `${SITE.domain}/blog/${article.slug}.html`;
+  const canonical = `${SITE.domain}/blog/${article.slug}`;
   const bc = [
-    { label: 'Home', href: '../index.html', url: `${SITE.domain}/` },
-    { label: 'Blog', href: 'index.html', url: `${SITE.domain}/blog/index.html` },
+    { label: 'Home', href: '/', url: `${SITE.domain}/` },
+    { label: 'Blog', href: '/blog/', url: `${SITE.domain}/blog/` },
     { label: article.title, url: canonical },
   ];
 
@@ -295,7 +295,7 @@ ${breadcrumbSchema(bc)}
 </head>
 <body>
 
-${header('blog')}
+${header()}
 
 ${breadcrumb(bc.map(b => ({ label: b.label, href: b.href })))}
 
@@ -321,7 +321,7 @@ ${articleBody(article)}
 
 ${relatedSection(article)}
 
-${footer('blog')}
+${footer()}
 
 </body>
 </html>
@@ -330,13 +330,13 @@ ${footer('blog')}
 }
 
 function blogIndexPage() {
-  const canonical = `${SITE.domain}/blog/index.html`;
+  const canonical = `${SITE.domain}/blog/`;
   const sorted = [...articles].sort((a, b) => (a.publishDate < b.publishDate ? 1 : -1));
   const bc = [
-    { label: 'Home', href: '../index.html', url: `${SITE.domain}/` },
+    { label: 'Home', href: '/', url: `${SITE.domain}/` },
     { label: 'Blog', url: canonical },
   ];
-  const cards = sorted.map(a => postCard(a, '')).join('\n        ');
+  const cards = sorted.map(a => postCard(a)).join('\n        ');
   const pills = CATEGORIES.map(c => `<span class="area-pill">${escapeHtml(c)}</span>`).join('\n          ');
 
   const html = `<!DOCTYPE html>
@@ -352,7 +352,7 @@ ${headBoilerplate({
 </head>
 <body>
 
-${header('blog')}
+${header()}
 
 ${breadcrumb(bc.map(b => ({ label: b.label, href: b.href })))}
 
@@ -374,7 +374,7 @@ ${breadcrumb(bc.map(b => ({ label: b.label, href: b.href })))}
     </div>
   </section>
 
-${footer('blog')}
+${footer()}
 
 </body>
 </html>

@@ -42,7 +42,7 @@ const articles = [
   ],
   ctaAfterSection: 2,
   relatedSlugs: ['dumpster-size-guide-10-20-30-40-yard', 'winter-prep-garage-basement-cleanout-guide', 'yard-waste-disposal-rules-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#services', label: 'Yard Waste & Green Debris Removal' }],
+  relatedSitePages: [{ href: '/#services', label: 'Yard Waste & Green Debris Removal' }],
 },
 
 // ───────────────────────── 2 ─────────────────────────
@@ -81,7 +81,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['licensed-insured-dumpster-rental-why-it-matters', 'flat-rate-vs-variable-pricing-dumpster-rental', 'hidden-fees-dumpster-rental'],
-  relatedSitePages: [{ href: '../index.html', label: 'Indianapolis Dumpster Rental Co homepage' }],
+  relatedSitePages: [{ href: '/', label: 'Indianapolis Dumpster Rental Co homepage' }],
 },
 
 // ───────────────────────── 3 ─────────────────────────
@@ -112,7 +112,7 @@ const articles = [
       `Heavy materials are the main cost driver, not volume. Concrete, brick, dirt, and roofing shingles are dense — a 20-yard container full of shingles can weigh several tons, while the same container full of furniture and boxes might weigh a fraction of that. Keeping the rental past the included period (usually 7 days) also adds a daily extension fee, and prohibited items like tires, paint cans, or batteries can trigger a per-item surcharge.`,
     ]},
     { h2: 'How your project type maps to typical cost', html: [
-      `A single-room remodel or garage cleanout usually lands in the 10-yard range near the low end of the scale. A roof replacement or full kitchen gut usually needs a 20-yard and lands mid-range — see our <a href="dumpster-rental-cost-roof-replacement.html">roof replacement cost breakdown</a> for specifics. Whole-home cleanouts and larger remodels typically need 30 yards.`,
+      `A single-room remodel or garage cleanout usually lands in the 10-yard range near the low end of the scale. A roof replacement or full kitchen gut usually needs a 20-yard and lands mid-range — see our <a href="/blog/dumpster-rental-cost-roof-replacement">roof replacement cost breakdown</a> for specifics. Whole-home cleanouts and larger remodels typically need 30 yards.`,
     ]},
     { h2: 'Getting an accurate quote', html: [
       `The fastest way to get a real number instead of a “starting at” figure is to tell us the project type, roughly how much debris, and your ZIP code. Call <a href="tel:{{TEL}}">{{PHONE}}</a> or use the quote form and we’ll confirm size and total price before anything is scheduled — no surprise invoice at pickup.`,
@@ -120,7 +120,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['dumpster-size-guide-10-20-30-40-yard', 'hidden-fees-dumpster-rental', 'dumpster-weight-limits-explained'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free instant quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free instant quote' }],
 },
 
 // ───────────────────────── 4 ─────────────────────────
@@ -154,7 +154,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['dumpster-rental-cost-indianapolis', 'dumpster-weight-limits-explained', 'dumpster-rental-cost-roof-replacement'],
-  relatedSitePages: [{ href: '../index.html#services', label: 'View all dumpster sizes' }],
+  relatedSitePages: [{ href: '/#services', label: 'View all dumpster sizes' }],
 },
 
 // ───────────────────────── 5 ─────────────────────────
@@ -184,7 +184,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['fall-yard-cleanup-dumpster-rental-guide', 'what-cannot-go-in-a-dumpster-marion-county', 'dumpster-rental-vs-junk-removal-service'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 // ───────────────────────── 6 ─────────────────────────
@@ -209,12 +209,12 @@ const articles = [
       `We can invoice by property or unit, and provide receipts that make it straightforward to bill turnover cleanout costs back against a security deposit when the lease or local ordinance allows it. Keep the invoice with your move-out photos as part of the deposit disposition file.`,
     ]},
     { h2: 'Setting up recurring service', html: [
-      `If turnovers are a regular part of your portfolio, a standing account with pre-agreed pricing and priority scheduling saves time over re-quoting every job. See our guide on <a href="bulk-recurring-dumpster-service-contractors-builders.html">bulk and recurring dumpster service</a> for how that works.`,
+      `If turnovers are a regular part of your portfolio, a standing account with pre-agreed pricing and priority scheduling saves time over re-quoting every job. See our guide on <a href="/blog/bulk-recurring-dumpster-service-contractors-builders">bulk and recurring dumpster service</a> for how that works.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['bulk-recurring-dumpster-service-contractors-builders', 'eviction-cleanout-landlord-guide-indianapolis', 'dumpster-rental-vs-junk-removal-service'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Request property management pricing' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Request property management pricing' }],
 },
 
 // ───────────────────────── 7 ─────────────────────────
@@ -236,7 +236,7 @@ const articles = [
       `A loaded 30 or 40-yard dumpster is heavy, and repeated placement in the same driveway spot over a multi-day rental can crack older or thinner asphalt, especially in the freeze-thaw cycles Indianapolis gets each winter. A reputable company will use protective boards under the container on request and stand behind damage if it happens — ask about this before delivery, not after.`,
     ]},
     { h2: 'What “licensed” means locally', html: [
-      `Depending on where the container sits, placement in the public right-of-way (street or alley, as opposed to a private driveway) may require a permit through the city. A company that regularly handles Indianapolis deliveries should know when a permit applies and can tell you before drop-off — see our <a href="dumpster-permit-rules-indianapolis-driveway.html">permit rules guide</a> for the driveway-vs-street distinction.`,
+      `Depending on where the container sits, placement in the public right-of-way (street or alley, as opposed to a private driveway) may require a permit through the city. A company that regularly handles Indianapolis deliveries should know when a permit applies and can tell you before drop-off — see our <a href="/blog/dumpster-permit-rules-indianapolis-driveway">permit rules guide</a> for the driveway-vs-street distinction.`,
     ]},
     { h2: 'How to verify it in one phone call', html: [
       `Just ask: “Can you confirm you’re insured, and what happens if the truck damages my driveway?” A company with real coverage answers immediately and specifically. Vague answers or a transfer to “customer service” are the signal to keep looking.`,
@@ -244,7 +244,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['how-to-choose-a-dumpster-rental-company-indianapolis', 'dumpster-permit-rules-indianapolis-driveway', 'same-day-dumpster-delivery-indianapolis'],
-  relatedSitePages: [{ href: '../index.html', label: 'Indianapolis Dumpster Rental Co homepage' }],
+  relatedSitePages: [{ href: '/', label: 'Indianapolis Dumpster Rental Co homepage' }],
 },
 
 // ───────────────────────── 8 ─────────────────────────
@@ -277,7 +277,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['diy-renovation-cleanup-dumpster-vs-truck-trips', 'dumpster-rental-vs-curbside-pickup-indianapolis', 'estate-cleanout-guide-dumpster-rental'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 // ───────────────────────── 9 ─────────────────────────
@@ -310,7 +310,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['post-move-cleanout-checklist-indianapolis', 'moving-out-dumpster-rental-downsizing-estate-cleanout', 'dumpster-size-guide-10-20-30-40-yard'],
-  relatedSitePages: [{ href: '../carmel.html', label: 'Dumpster rental in Carmel, IN' }],
+  relatedSitePages: [{ href: '/carmel', label: 'Dumpster rental in Carmel, IN' }],
 },
 
 // ───────────────────────── 10 ─────────────────────────
@@ -343,7 +343,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['yard-waste-disposal-rules-indianapolis', 'construction-debris-regulations-hamilton-marion-county', 'dumpster-weight-limits-explained'],
-  relatedSitePages: [{ href: '../index.html#faq', label: 'Dumpster rental FAQs' }],
+  relatedSitePages: [{ href: '/#faq', label: 'Dumpster rental FAQs' }],
 },
 
 // ───────────────────────── 11 ─────────────────────────
@@ -362,7 +362,7 @@ const articles = [
       `Some companies quote a low base price, then add a separate delivery or fuel surcharge that isn’t mentioned until checkout. Ask directly: “Is delivery and pickup included in that number?” A true flat-rate quote already has it baked in.`,
     ]},
     { h2: 'Overage weight fees', html: [
-      `Every dumpster includes a set tonnage allowance. Go over it and you’re billed per additional ton, sometimes at a steep rate. This is the single most common source of a surprise invoice, especially on jobs with concrete, dirt, or shingles. Ask for the included tonnage in writing before you book — see our <a href="dumpster-weight-limits-explained.html">weight limits guide</a> for typical allowances by size.`,
+      `Every dumpster includes a set tonnage allowance. Go over it and you’re billed per additional ton, sometimes at a steep rate. This is the single most common source of a surprise invoice, especially on jobs with concrete, dirt, or shingles. Ask for the included tonnage in writing before you book — see our <a href="/blog/dumpster-weight-limits-explained">weight limits guide</a> for typical allowances by size.`,
     ]},
     { h2: 'Rental extension fees', html: [
       `Standard rentals run about 7 days. Keep the container longer and most companies charge a daily extension fee. That’s reasonable and expected — the problem is companies that don’t disclose the rate upfront, so you find out only after you’ve already gone over.`,
@@ -376,7 +376,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['dumpster-rental-cost-indianapolis', 'flat-rate-vs-variable-pricing-dumpster-rental', 'dumpster-weight-limits-explained'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a flat-rate quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a flat-rate quote' }],
 },
 
 // ───────────────────────── 12 ─────────────────────────
@@ -406,7 +406,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['construction-site-dumpster-management-general-contractors', 'construction-debris-regulations-hamilton-marion-county', 'property-manager-guide-dumpster-rental-tenant-turnovers'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Request contractor pricing' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Request contractor pricing' }],
 },
 
 // ───────────────────────── 13 ─────────────────────────
@@ -428,7 +428,7 @@ const articles = [
       `If there’s no driveway space — common on older Indianapolis streets with tight lots — and the dumpster needs to sit on the street or in a public alley, that’s the public right-of-way, and placement there typically requires a permit through the city’s Department of Business and Neighborhood Services. Rules and fees can change, so confirm current requirements with the city before delivery day if street placement is your only option.`,
     ]},
     { h2: 'HOA neighborhoods add another layer', html: [
-      `Separately from city permitting, many HOA communities around Carmel, Fishers, and Westfield have their own rules about how long a dumpster can sit in a driveway or whether it needs to be behind a fence line. Check your HOA’s covenants before booking if you’re in a managed community — see our <a href="dumpster-placement-rules-streets-alleys-hoa.html">placement rules guide</a> for more detail.`,
+      `Separately from city permitting, many HOA communities around Carmel, Fishers, and Westfield have their own rules about how long a dumpster can sit in a driveway or whether it needs to be behind a fence line. Check your HOA’s covenants before booking if you’re in a managed community — see our <a href="/blog/dumpster-placement-rules-streets-alleys-hoa">placement rules guide</a> for more detail.`,
     ]},
     { h2: 'What happens if you skip a required permit', html: [
       `An unpermitted dumpster in the right-of-way can be cited or, in some cases, tagged for removal, which delays your project and adds cost. It’s a quick check worth doing before delivery rather than after.`,
@@ -439,7 +439,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['dumpster-placement-rules-streets-alleys-hoa', 'what-cannot-go-in-a-dumpster-marion-county', 'licensed-insured-dumpster-rental-why-it-matters'],
-  relatedSitePages: [{ href: '../carmel.html', label: 'Dumpster rental in Carmel, IN' }],
+  relatedSitePages: [{ href: '/carmel', label: 'Dumpster rental in Carmel, IN' }],
 },
 
 // ───────────────────────── 14 ─────────────────────────
@@ -464,12 +464,12 @@ const articles = [
       `Schedule the dumpster to arrive before the movers’ packing day, not after. Sorting and discarding first means the movers are only touching things that are actually going with you, which usually keeps the moving quote lower too.`,
     ]},
     { h2: 'For estate situations specifically', html: [
-      `Estate cleanouts carry extra emotional weight on top of the logistics. If you’re handling this for a family member, our <a href="estate-cleanout-guide-dumpster-rental.html">estate cleanout guide</a> covers the specific considerations — documents, keepsakes, and pacing the work over the timeline you actually have.`,
+      `Estate cleanouts carry extra emotional weight on top of the logistics. If you’re handling this for a family member, our <a href="/blog/estate-cleanout-guide-dumpster-rental">estate cleanout guide</a> covers the specific considerations — documents, keepsakes, and pacing the work over the timeline you actually have.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['estate-cleanout-guide-dumpster-rental', 'post-move-cleanout-checklist-indianapolis', 'decluttering-before-selling-your-home-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 // ───────────────────────── 15 ─────────────────────────
@@ -505,7 +505,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['hidden-fees-dumpster-rental', 'how-to-choose-a-dumpster-rental-company-indianapolis', 'dumpster-rental-cost-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a flat-rate quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a flat-rate quote' }],
 },
 
 // ───────────────────────── 16 ─────────────────────────
@@ -530,12 +530,12 @@ const articles = [
       `Pressure-treated lumber from an old deck or fence, along with railroad ties, is typically fine to include with construction debris in a dumpster but should not be burned or mixed into mulch — flag it when booking if it’s a large portion of your load.`,
     ]},
     { h2: 'Combining yard waste with a larger cleanout', html: [
-      `If your project spans both yard debris and household junk — say, a landscaping overhaul alongside a garage cleanout — one dumpster can usually handle both, but tell us the mix when booking so we size it correctly. See our <a href="fall-yard-cleanup-dumpster-rental-guide.html">fall yard cleanup guide</a> for seasonal sizing specifics.`,
+      `If your project spans both yard debris and household junk — say, a landscaping overhaul alongside a garage cleanout — one dumpster can usually handle both, but tell us the mix when booking so we size it correctly. See our <a href="/blog/fall-yard-cleanup-dumpster-rental-guide">fall yard cleanup guide</a> for seasonal sizing specifics.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['fall-yard-cleanup-dumpster-rental-guide', 'what-cannot-go-in-a-dumpster-marion-county', 'storm-debris-cleanup-dumpster-rental-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#services', label: 'Yard Waste & Green Debris Removal' }],
+  relatedSitePages: [{ href: '/#services', label: 'Yard Waste & Green Debris Removal' }],
 },
 
 // ───────────────────────── 17 ─────────────────────────
@@ -571,7 +571,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['dumpster-rental-cost-roof-replacement', 'hidden-fees-dumpster-rental', 'dumpster-size-guide-10-20-30-40-yard'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a flat-rate quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a flat-rate quote' }],
 },
 
 // ───────────────────────── 18 ─────────────────────────
@@ -601,7 +601,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['decluttering-before-selling-your-home-indianapolis', 'dumpster-rental-vs-junk-removal-service', 'winter-prep-garage-basement-cleanout-guide'],
-  relatedSitePages: [{ href: '../fishers.html', label: 'Dumpster rental in Fishers, IN' }],
+  relatedSitePages: [{ href: '/fishers', label: 'Dumpster rental in Fishers, IN' }],
 },
 
 // ───────────────────────── 19 ─────────────────────────
@@ -626,12 +626,12 @@ const articles = [
       `Eviction units often have more left behind than a standard turnover — full furniture sets, appliances, sometimes years of accumulated belongings. A 20-yard is a safer default than a 10-yard for this specific scenario; ordering a second dumpster mid-cleanout costs more time than sizing up from the start.`,
     ]},
     { h2: 'Same-day and next-day scheduling', html: [
-      `Because eviction timelines are often set by a court date, we prioritize fast turnaround for these jobs — see our <a href="same-day-dumpster-delivery-indianapolis.html">same-day delivery guide</a> for what’s realistic. Call <a href="tel:{{TEL}}">{{PHONE}}</a> as soon as you have a confirmed possession date.`,
+      `Because eviction timelines are often set by a court date, we prioritize fast turnaround for these jobs — see our <a href="/blog/same-day-dumpster-delivery-indianapolis">same-day delivery guide</a> for what’s realistic. Call <a href="tel:{{TEL}}">{{PHONE}}</a> as soon as you have a confirmed possession date.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['same-day-dumpster-delivery-indianapolis', 'property-manager-guide-dumpster-rental-tenant-turnovers', 'bulk-recurring-dumpster-service-contractors-builders'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Request a fast turnaround quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Request a fast turnaround quote' }],
 },
 
 // ───────────────────────── 20 ─────────────────────────
@@ -650,7 +650,7 @@ const articles = [
       `Placing the container fully on your driveway avoids right-of-way permitting in most cases and is the fastest, simplest option. Make sure there’s enough clearance — the delivery truck needs a straight approach and roughly the container’s length plus a few extra feet to maneuver.`,
     ]},
     { h2: 'Streets and public right-of-way', html: [
-      `If a driveway isn’t available or long enough, street placement is possible in many cases but usually requires a permit through the city, since you’re occupying part of the public right-of-way. See our <a href="dumpster-permit-rules-indianapolis-driveway.html">permit guide</a> for how that process works, and note that some streets have parking restrictions that affect where a container can legally sit even with a permit.`,
+      `If a driveway isn’t available or long enough, street placement is possible in many cases but usually requires a permit through the city, since you’re occupying part of the public right-of-way. See our <a href="/blog/dumpster-permit-rules-indianapolis-driveway">permit guide</a> for how that process works, and note that some streets have parking restrictions that affect where a container can legally sit even with a permit.`,
     ]},
     { h2: 'Alleys', html: [
       `Common in older Indianapolis neighborhoods, alley placement has its own access considerations — alleys are often narrower and may be used by neighbors for garage access, so placement needs to avoid blocking through-traffic.`,
@@ -664,7 +664,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['dumpster-permit-rules-indianapolis-driveway', 'what-cannot-go-in-a-dumpster-marion-county', 'licensed-insured-dumpster-rental-why-it-matters'],
-  relatedSitePages: [{ href: '../westfield.html', label: 'Dumpster rental in Westfield, IN' }],
+  relatedSitePages: [{ href: '/westfield', label: 'Dumpster rental in Westfield, IN' }],
 },
 
 // ───────────────────────── 21 ─────────────────────────
@@ -686,7 +686,7 @@ const articles = [
       `A 20-yard dumpster is the standard recommendation for a single-layer tear-off on an average-size home. If your roofer confirms multiple layers, or your home is larger than about 2,500 sq ft, a 30-yard avoids running out of weight allowance partway through the job.`,
     ]},
     { h2: 'Typical cost range', html: [
-      `Budget roughly $350–$500 for a roofing dumpster in the Indianapolis area, weighted toward the higher end for multi-layer tear-offs or larger homes. Confirm the included tonnage with your quote — see our <a href="dumpster-weight-limits-explained.html">weight limits guide</a> for typical allowances — since going over is the main way this job exceeds budget.`,
+      `Budget roughly $350–$500 for a roofing dumpster in the Indianapolis area, weighted toward the higher end for multi-layer tear-offs or larger homes. Confirm the included tonnage with your quote — see our <a href="/blog/dumpster-weight-limits-explained">weight limits guide</a> for typical allowances — since going over is the main way this job exceeds budget.`,
     ]},
     { h2: 'Coordinating delivery with your roofing crew', html: [
       `Have the dumpster on-site and positioned before the crew starts tear-off, ideally as close to the house as the driveway allows to minimize how far shingles get carried or thrown. Confirm with your roofer whether they’re handling disposal logistics or if you’re booking the dumpster directly — miscommunication here is the most common scheduling issue we see.`,
@@ -694,7 +694,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['dumpster-weight-limits-explained', 'dumpster-size-guide-10-20-30-40-yard', 'dumpster-rental-cost-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a roofing dumpster quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a roofing dumpster quote' }],
 },
 
 // ───────────────────────── 22 ─────────────────────────
@@ -724,7 +724,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['dumpster-rental-vs-junk-removal-service', 'dumpster-size-guide-10-20-30-40-yard', 'dumpster-rental-cost-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 // ───────────────────────── 23 ─────────────────────────
@@ -746,7 +746,7 @@ const articles = [
       `Cardboard boxes, packing paper, and bubble wrap from a full-house move are bulkier than they seem once flattened and piled. A significant portion breaks down for recycling, but a lot of moving-specific material (packing peanuts, damaged boxes, furniture blankets that didn’t survive) doesn’t — a small dumpster clears it in one pass instead of weeks of curbside recycling pickups.`,
     ]},
     { h2: 'What size to book', html: [
-      `A 10-yard typically covers packing debris plus a few pieces of unwanted furniture for a standard move. If you’re also doing a larger downsizing purge at the same time, see our <a href="moving-out-dumpster-rental-downsizing-estate-cleanout.html">downsizing guide</a> for sizing a bigger combined cleanout.`,
+      `A 10-yard typically covers packing debris plus a few pieces of unwanted furniture for a standard move. If you’re also doing a larger downsizing purge at the same time, see our <a href="/blog/moving-out-dumpster-rental-downsizing-estate-cleanout">downsizing guide</a> for sizing a bigger combined cleanout.`,
     ]},
     { h2: 'Timing it right', html: [
       `Book delivery for your actual move-out or move-in day rather than “sometime that week” — having the container there while you’re already unpacking or clearing out means debris never has to sit around waiting for a second pass.`,
@@ -754,7 +754,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['moving-out-dumpster-rental-downsizing-estate-cleanout', 'decluttering-before-selling-your-home-indianapolis', 'dumpster-rental-vs-curbside-pickup-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 // ───────────────────────── 24 ─────────────────────────
@@ -779,12 +779,12 @@ const articles = [
       `Have your address, a rough idea of project type and debris volume, and your preferred placement spot (driveway, street) ready when you call. That lets us quote and confirm size in one call instead of a back-and-forth that costs you time.`,
     ]},
     { h2: 'When same-day isn’t realistic', html: [
-      `If your job needs street placement and a permit, same-day generally isn’t possible since permitting takes its own processing time — see our <a href="dumpster-permit-rules-indianapolis-driveway.html">permit guide</a>. For anything time-sensitive like an eviction cleanout or closing deadline, call as early as possible: <a href="tel:{{TEL}}">{{PHONE}}</a>.`,
+      `If your job needs street placement and a permit, same-day generally isn’t possible since permitting takes its own processing time — see our <a href="/blog/dumpster-permit-rules-indianapolis-driveway">permit guide</a>. For anything time-sensitive like an eviction cleanout or closing deadline, call as early as possible: <a href="tel:{{TEL}}">{{PHONE}}</a>.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['how-to-choose-a-dumpster-rental-company-indianapolis', 'eviction-cleanout-landlord-guide-indianapolis', 'dumpster-permit-rules-indianapolis-driveway'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Request same-day delivery' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Request same-day delivery' }],
 },
 
 // ───────────────────────── 25 ─────────────────────────
@@ -809,12 +809,12 @@ const articles = [
       `Job sites in the public right-of-way, or projects where the container needs to sit on a street rather than the lot itself, generally need the same municipal permitting as a residential street placement — requirements are set locally, so confirm with the relevant city or county office before mobilizing rather than assuming Marion County rules apply the same way in Hamilton County.`,
     ]},
     { h2: 'Recurring pickup for active job sites', html: [
-      `For multi-week or multi-month jobs generating debris continuously, a swap-out schedule keeps a site compliant and safe rather than letting debris accumulate past what one container can hold. See our <a href="bulk-recurring-dumpster-service-contractors-builders.html">recurring service guide</a> for how that’s typically set up.`,
+      `For multi-week or multi-month jobs generating debris continuously, a swap-out schedule keeps a site compliant and safe rather than letting debris accumulate past what one container can hold. See our <a href="/blog/bulk-recurring-dumpster-service-contractors-builders">recurring service guide</a> for how that’s typically set up.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['bulk-recurring-dumpster-service-contractors-builders', 'construction-site-dumpster-management-general-contractors', 'what-cannot-go-in-a-dumpster-marion-county'],
-  relatedSitePages: [{ href: '../noblesville.html', label: 'Dumpster rental in Noblesville, IN' }],
+  relatedSitePages: [{ href: '/noblesville', label: 'Dumpster rental in Noblesville, IN' }],
 },
 
 // ───────────────────────── 26 ─────────────────────────
@@ -836,7 +836,7 @@ const articles = [
       `A single large downed tree with its branches can fill a 20-yard dumpster on its own. If you’re dealing with a full property’s worth of storm damage — several trees plus fence sections — a 30-yard is more realistic. Whole trunk sections over about 4 feet or 12 inches in diameter can be a challenge; call ahead if you’ve got large sections down.`,
     ]},
     { h2: 'Speed matters after a storm', html: [
-      `Storm debris left too long can become a hazard — blocking access, harboring pests, or becoming a tripping hazard for kids and pets. We prioritize fast delivery after major weather events; see our <a href="same-day-dumpster-delivery-indianapolis.html">same-day delivery guide</a> for what to expect, and call <a href="tel:{{TEL}}">{{PHONE}}</a> as soon as it’s safe to do so.`,
+      `Storm debris left too long can become a hazard — blocking access, harboring pests, or becoming a tripping hazard for kids and pets. We prioritize fast delivery after major weather events; see our <a href="/blog/same-day-dumpster-delivery-indianapolis">same-day delivery guide</a> for what to expect, and call <a href="tel:{{TEL}}">{{PHONE}}</a> as soon as it’s safe to do so.`,
     ]},
     { h2: 'Working with contractors on repairs', html: [
       `If you’re also having roof or fence repairs done as part of the cleanup, coordinate dumpster delivery with your contractor’s schedule so debris from repairs goes straight into the same container rather than needing a second pickup.`,
@@ -844,7 +844,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['same-day-dumpster-delivery-indianapolis', 'yard-waste-disposal-rules-indianapolis', 'dumpster-rental-cost-roof-replacement'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Request fast storm cleanup delivery' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Request fast storm cleanup delivery' }],
 },
 
 // ───────────────────────── 27 ─────────────────────────
@@ -860,7 +860,7 @@ const articles = [
   intro: `On an active job site, dumpster placement and swap-out timing affect every trade working there — a container in the wrong spot or one that fills up mid-week without a scheduled pull becomes everyone’s problem, not just the GC’s.`,
   sections: [
     { h2: 'Placement that doesn’t block the site', html: [
-      `Position the container where it’s reachable for debris disposal from multiple work areas but doesn’t block equipment access, material deliveries, or the path subcontractors use most. On tighter urban lots common in Indianapolis infill projects, this sometimes means placing the container curbside rather than on-lot — which brings permitting into play, covered in our <a href="dumpster-permit-rules-indianapolis-driveway.html">permit guide</a>.`,
+      `Position the container where it’s reachable for debris disposal from multiple work areas but doesn’t block equipment access, material deliveries, or the path subcontractors use most. On tighter urban lots common in Indianapolis infill projects, this sometimes means placing the container curbside rather than on-lot — which brings permitting into play, covered in our <a href="/blog/dumpster-permit-rules-indianapolis-driveway">permit guide</a>.`,
     ]},
     { h2: 'Matching container size to build phase', html: [
       `Demo and framing debris is bulky and moderately heavy — a 30 or 40-yard suits this phase. As the project moves into drywall, tile, and finish work, debris gets denser per square foot; switching to a 20-yard with more frequent swaps often controls cost better than one oversized container sitting mostly full of heavy scrap.`,
@@ -869,12 +869,12 @@ const articles = [
       `Concrete, tile, and stone finish work generate dense debris that can hit a container’s weight limit well before it looks full. Flag these phases when scheduling pulls so we can plan for more frequent swaps rather than one container sitting overloaded.`,
     ]},
     { h2: 'Standing service for multiple concurrent sites', html: [
-      `If you’re running several active builds around the metro at once, a standing account with pre-set pricing and swap-out scheduling removes the need to re-quote every site. See our <a href="bulk-recurring-dumpster-service-contractors-builders.html">recurring service guide</a>, or call <a href="tel:{{TEL}}">{{PHONE}}</a> to set one up.`,
+      `If you’re running several active builds around the metro at once, a standing account with pre-set pricing and swap-out scheduling removes the need to re-quote every site. See our <a href="/blog/bulk-recurring-dumpster-service-contractors-builders">recurring service guide</a>, or call <a href="tel:{{TEL}}">{{PHONE}}</a> to set one up.`,
     ]},
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['bulk-recurring-dumpster-service-contractors-builders', 'construction-debris-regulations-hamilton-marion-county', 'dumpster-permit-rules-indianapolis-driveway'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Request contractor pricing' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Request contractor pricing' }],
 },
 
 // ───────────────────────── 28 ─────────────────────────
@@ -896,7 +896,7 @@ const articles = [
       `A full kitchen gut — cabinets, countertops, flooring, appliances, and often some drywall — typically needs a 20-yard dumpster. Kitchens generate a lot of bulky-but-light debris (cabinet boxes) alongside a few genuinely heavy items (stone or quartz countertops, old appliances), so a mid-size container balances both.`,
     ]},
     { h2: 'Typical cost range', html: [
-      `Budget roughly $300–$450 for a bathroom remodel dumpster and $325–$450 for a kitchen remodel, depending on final size and whether the load includes stone countertops or cast-iron fixtures, which push weight up. See our <a href="dumpster-size-guide-10-20-30-40-yard.html">size guide</a> if you’re combining the remodel with other work.`,
+      `Budget roughly $300–$450 for a bathroom remodel dumpster and $325–$450 for a kitchen remodel, depending on final size and whether the load includes stone countertops or cast-iron fixtures, which push weight up. See our <a href="/blog/dumpster-size-guide-10-20-30-40-yard">size guide</a> if you’re combining the remodel with other work.`,
     ]},
     { h2: 'A note on old countertops and tubs', html: [
       `Granite, quartz, and cast-iron are dramatically heavier per square foot than laminate or fiberglass. If your remodel includes swapping out either, tell us specifically — it’s often the single biggest weight factor in an otherwise mid-size remodel job and can be the difference between staying under your tonnage allowance or not.`,
@@ -904,7 +904,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['dumpster-weight-limits-explained', 'dumpster-size-guide-10-20-30-40-yard', 'dumpster-rental-cost-indianapolis'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a remodel dumpster quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a remodel dumpster quote' }],
 },
 
 // ───────────────────────── 29 ─────────────────────────
@@ -929,7 +929,7 @@ const articles = [
       `Furniture in good condition, clothing, and housewares are often welcomed by local donation centers, which can also feel like a better outcome than discarding when the timeline allows for a donation pickup to be scheduled. When the timeline is tight, the dumpster becomes the practical choice for everything that can’t be sorted and donated in time.`,
     ]},
     { h2: 'Pacing the work over a rental period', html: [
-      `A standard 7-day rental gives most families enough time to work through a full house without rushing, especially if multiple family members are splitting the work across a weekend or two. If you need more time, ask about extending the rental rather than feeling pressured to finish on the original schedule — see our <a href="moving-out-dumpster-rental-downsizing-estate-cleanout.html">downsizing guide</a> for related planning tips.`,
+      `A standard 7-day rental gives most families enough time to work through a full house without rushing, especially if multiple family members are splitting the work across a weekend or two. If you need more time, ask about extending the rental rather than feeling pressured to finish on the original schedule — see our <a href="/blog/moving-out-dumpster-rental-downsizing-estate-cleanout">downsizing guide</a> for related planning tips.`,
     ]},
     { h2: 'We’re here to make this part easier', html: [
       `If you’re not sure what size you need or how the process works, call <a href="tel:{{TEL}}">{{PHONE}}</a> — we handle estate cleanout calls regularly and can walk you through it without any pressure on timing.`,
@@ -937,7 +937,7 @@ const articles = [
   ],
   ctaAfterSection: 4,
   relatedSlugs: ['moving-out-dumpster-rental-downsizing-estate-cleanout', 'decluttering-before-selling-your-home-indianapolis', 'dumpster-rental-vs-junk-removal-service'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 // ───────────────────────── 30 ─────────────────────────
@@ -967,7 +967,7 @@ const articles = [
   ],
   ctaAfterSection: 3,
   relatedSlugs: ['dumpster-rental-vs-junk-removal-service', 'post-move-cleanout-checklist-indianapolis', 'dumpster-size-guide-10-20-30-40-yard'],
-  relatedSitePages: [{ href: '../index.html#quote', label: 'Get a free quote' }],
+  relatedSitePages: [{ href: '/#quote', label: 'Get a free quote' }],
 },
 
 ];

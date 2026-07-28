@@ -15,12 +15,27 @@ const ROOT_PAGES = [
 
 let errors = 0;
 
+const HAS_EXTENSION_RE = /\.[a-z0-9]{2,4}$/i;
+
 function resolveTarget(fromFile, href) {
-  // fromFile is absolute path; href is a relative link found in that file
+  // fromFile is absolute path; href is a link found in that file. The site
+  // now uses clean, root-relative URLs (e.g. "/carmel", "/blog/some-slug",
+  // "/blog/") that the host maps onto physical "name.html" files on disk —
+  // so a clean URL has to be mapped back to its .html file to verify it
+  // actually exists.
   const clean = href.split('#')[0];
   if (clean === '') return null; // pure same-page anchor, nothing to resolve
-  const dir = path.dirname(fromFile);
-  return path.resolve(dir, clean);
+
+  let target;
+  if (clean.startsWith('/')) {
+    target = path.join(ROOT, clean);
+  } else {
+    target = path.resolve(path.dirname(fromFile), clean);
+  }
+
+  if (HAS_EXTENSION_RE.test(clean)) return target; // real asset (.css, .js, .xml, .txt…)
+  if (clean.endsWith('/') || clean === '') return path.join(target, 'index.html');
+  return `${target}.html`;
 }
 
 function checkLinks(filePath) {
