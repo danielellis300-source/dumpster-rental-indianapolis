@@ -69,6 +69,28 @@ function tagBalance(filePath) {
   }
 }
 
+function checkHonesty(filePath) {
+  const html = fs.readFileSync(filePath, 'utf8');
+  const prohibited = [
+    /aggregateRating/i,
+    /ratingValue/i,
+    /reviewCount/i,
+    /Years in Business/i,
+    /Dumpsters Delivered/i,
+    /Google Rating/i,
+    />\s*5\+\s*</i,
+    />\s*1,000\+\s*</i,
+    />\s*great\s+[^<]+</i,
+  ];
+
+  for (const pattern of prohibited) {
+    if (pattern.test(html)) {
+      console.error(`PROHIBITED TRUST SIGNAL: ${path.relative(ROOT, filePath)} matches ${pattern}`);
+      errors++;
+    }
+  }
+}
+
 function main() {
   const files = [
     ...ROOT_PAGES.map(f => path.join(ROOT, f)),
@@ -78,6 +100,7 @@ function main() {
   for (const f of files) {
     checkLinks(f);
     tagBalance(f);
+    if (ROOT_PAGES.some(page => path.join(ROOT, page) === f)) checkHonesty(f);
   }
 
   console.log(`\nChecked ${files.length} files.`);
